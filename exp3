@@ -1,0 +1,29 @@
+package exp3;
+import java.util.Scanner;
+class Student {
+String name;
+String regNo;
+int marks;
+void getDetails() {
+Scanner sc = new Scanner(System.in);
+System.out.print("enter student name");
+name = sc.nextLine();
+System.out.print("enter register number");
+regNo = sc.nextLine();
+System.out.print("enter marks");
+marks = sc.nextInt();
+}
+void displayDetails() {
+System.out.println("\nstudent details");
+System.out.println("name");
+System.out.println("register number" + regNo);
+System.out.println("marks"+marks);
+}
+}
+public class exp3 {
+public static void main(String[] args) {
+Student s1 = new Student(); // Object creation
+s1.getDetails(); // Method call
+s1.displayDetails();
+}
+}
